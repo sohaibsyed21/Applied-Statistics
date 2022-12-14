@@ -1,0 +1,8 @@
+"0","pred<-predict(fit,newdata=data.frame(x=550),type='response')"
+"0","pred"
+"1","        1 "
+"1","
+"
+"1","0.5242263 "
+"1","
+"

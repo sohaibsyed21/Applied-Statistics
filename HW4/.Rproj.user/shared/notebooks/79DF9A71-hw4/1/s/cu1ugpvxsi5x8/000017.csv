@@ -1,0 +1,15 @@
+"0","library(car)"
+"0","vif(lung_subset_model)"
+"2","there are higher-order terms (interactions) in this model
+consider setting type = 'predictor'; see ?vif
+"
+"1","       x1 "
+"1","       x2 "
+"1","    x1:x2 "
+"1","
+"
+"1"," 5.431477 "
+"1","11.639560 "
+"1","22.474469 "
+"1","
+"

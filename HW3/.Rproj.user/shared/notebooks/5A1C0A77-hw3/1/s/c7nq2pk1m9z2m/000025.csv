@@ -1,0 +1,1 @@
+"0","boxcox.sse(sales_data$x,sales_data$y,l=seq(.3,.7,.1))"

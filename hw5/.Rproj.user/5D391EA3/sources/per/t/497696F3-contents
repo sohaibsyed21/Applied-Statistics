@@ -1,0 +1,180 @@
+---
+title: "hw5"
+author: "Sohaib Syed"
+date: "2022-11-18"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Problem 1
+
+## a
+
+```{r}
+performance_ability_original<-read.table('CH14PR09.txt',col.names = c('y','x'))
+fit<-glm(y~x,data=performance_ability_original,family=binomial(link="logit"))
+summary(fit)
+```
+B0=-10.308925 B1=0.01892
+
+fitted equation= pi_hat= [1+exp(10.3089-0.1892X)]^-1
+
+## b
+```{r}
+plot(performance_ability_original$x,fitted(fit),xlab='Emotional Stability' , ylab= ' Probability of ability to perform task ')
+lines(lowess(performance_ability_original$x,fitted(fit)),col='red')
+```
+Yes, the logistic response function fits very well.
+
+
+## c
+```{r}
+exp(0.01892)
+```
+
+This is the odd-ratio. Since b0 and B1 are on log scale we scale by exponent. This number is close to one thus an increase of 1 of the predictor is not likely to increase the odds of an event occurring. Specific to our data, an increase of 1 on the test score is unlikely to increase the chances of a person being able to perform.
+
+## d
+```{r}
+pred<-predict(fit,newdata=data.frame(x=550),type='response')
+pred
+```
+
+## e
+
+We have to manipulate the pi function from part a of this problem to solve for x:
+
+.7=[1+exp(10.3089-0.01892X)])]^-1
+1/.7=1+exp(10.3089-0.01892X)
+(1/.7)-1=exp(10.3089-0.01892X)
+ln((1/.7)-1)=10.3089-.01892x
+ln((1/.7)-1)-10.3089=-.01892x
+(ln((1/.7)-1)-10.3089)/-.01892=x
+=589.65
+so test score is 589.65
+
+## 14.10(a)
+
+```{r}
+fitprobit<-glm(y~x,data=performance_ability_original,family=binomial(link="probit"))
+summary(fitprobit)
+```
+
+B0=-6.374398 and B1=0.011695
+
+probit = pi_hat= phi(B0+B1x)
+
+pi_hat= phi(-6.374398+0.011695x)
+
+The fits look similar; a negative B0 and very small non-zero B1. 
+
+I can conclude that since the response is binary both probit and logit response functions can fit data.
+
+# Problem 2
+
+## a
+```{r}
+car_purchase_original<-read.table('CH14PR13.txt',col.names = c('y','x1','x2'))
+car_fit_full<-glm(y~x1+x2,data=car_purchase_original,family=binomial(link="logit"))
+summary(car_fit_full)
+```
+B0= -4.73931, B1= 0.06773, B2= 0.59863
+
+fitted response function = pi_hat= [1+exp(4.73931-0.06773X1-0.59863X2)]^-1
+
+## b
+```{r}
+exp(car_fit_full$coefficients[2])
+exp(car_fit_full$coefficients[3])
+```
+
+These are the odds ratios for the two predictors. For B1, I interpret it as when the annual family income increases by 1 (thousands), the probability of the family buying a new car increase by 1.070079. For B2, an increase of the age of the oldest car in the family by 1 year, the chances of a buying a new car increases by 1.81927.
+
+
+## c
+
+```{r}
+pred_car<-predict(car_fit_full,newdata=data.frame(x1=50,x2=3),type='response')
+pred_car
+
+```
+The probability is 60.902%
+
+# Problem 3
+
+
+## a
+```{r}
+toxicity_original<-read.table('CH14PR12.txt',col.names = c('x1','nj','y'))
+prob_i<-toxicity_original$y/toxicity_original$nj
+plot(toxicity_original$x1,prob_i,xlab='Dose Level (log-scale)', ylab='Proportions of Dead Insects')
+
+```
+It seems apprpriate to use logistic curve here because there is an s-shape curve. 
+
+
+
+## b
+```{r}
+toxicity_fit<-glm(prob_i~x1,data=toxicity_original,family=binomial(link='logit'))
+summary(toxicity_fit)
+```
+
+B0= -2.6437 and B1=0.6740
+
+response function= pi_hat= [1+exp(2.6437-0.6740X)]^-1
+
+
+
+## c
+
+```{r}
+plot(toxicity_original$x1,prob_i,xlab='Dose Level (log-scale)', ylab='Proportions of Dead Insects')
+lines(toxicity_original$x1,fitted(toxicity_fit))
+```
+
+Yes, the fitted response funciton fits the data very well.
+
+
+
+## d
+
+```{r}
+
+exp(toxicity_fit$coefficients[2])
+```
+
+This number is the odds ratio of B1. When the dosage level is increased by 1 (on log scale) then the odds of an insect dying are increased by 1.962056
+
+
+
+## e
+
+```{r}
+toxic_pred<-predict(toxicity_fit,newdata=data.frame(x1=3.5),type='response')
+toxic_pred
+```
+
+It is about a 42.93% chance.
+
+## f
+```{r}
+(log((1/0.5)-1)-2.6437)/-0.6740
+```
+
+
+We have to manipulate the response function from part b of this problem to solve for x:
+0.5=[1+exp(2.6437-0.0674X)]^-1
+1/0.5=[1+exp(2.6437-0.0674X)]
+(1/0.5)-1=exp(2.6437-0.0674X)
+ln((1/0.5)-1)=2.6437-0.0674X
+ln((1/0.5)-1)-2.6437=-0.0674X
+(ln((1/0.5)-1)-2.6437)/-0.0674=x
+=3.922404
+
+that is the median lethal dose.

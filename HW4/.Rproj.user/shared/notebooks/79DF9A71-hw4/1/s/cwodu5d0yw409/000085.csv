@@ -1,0 +1,1 @@
+"0","plot(lung_data$x2,lung_subset_model$residuals,xlab='blood out',ylab='residuals')"

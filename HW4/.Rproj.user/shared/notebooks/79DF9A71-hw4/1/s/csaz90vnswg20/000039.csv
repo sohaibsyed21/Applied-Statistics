@@ -1,0 +1,6 @@
+"0","expected<-normplot$x"
+"0","newresid<-normplot$y"
+"0","sxy=(expected-mean(expected))*(newresid-mean(newresid))"
+"0","sxx = sum((expected - mean(expected))^2)"
+"0","syy = sum((newresid - mean(newresid))^2)"
+"0","r=sxy/sqrt(sxx*syy)"

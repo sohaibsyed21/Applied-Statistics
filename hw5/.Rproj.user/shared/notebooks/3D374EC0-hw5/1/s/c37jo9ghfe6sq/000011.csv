@@ -1,0 +1,1 @@
+"0","lines(lowess(performance_ability_original$x,fitted(fit)),col='red')"

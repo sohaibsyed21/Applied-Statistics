@@ -1,0 +1,506 @@
+---
+title: "Assignment 3"
+author: "Sohaib Syed"
+date: "2022-10-02"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+  word_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(MASS)
+library('ALSM')
+library(matlib)
+
+```
+
+# Problem 1
+
+## a
+```{r}
+sales_data<-read.table('CH03PR17.txt',col.names = c('y','x'))
+par(mfrow=c(1,1))
+plot(sales_data$x,sales_data$y,xlab = 'Year',ylab='Sales (in thousands)')
+f<-lm(sales_data$y~sales_data$x)
+abline(f)
+summary(f)
+```
+
+A linear function may not be adequate here because as year increase the rate of sales increases non-linearly.
+
+## b
+```{r}
+par(mfrow=c(1,2))
+boxcox(y~x,data=sales_data)
+boxcox.sse(sales_data$x,sales_data$y,l=seq(.3,.7,.1))
+```
+It is suggested to use Y^.5 aka sqrt(Y)
+
+
+## c
+```{r}
+f1<-lm(sqrt(sales_data$y)~sales_data$x)
+
+summary(f1)
+```
+
+sqrt(Y)=10.26093+1.07626x
+
+
+## d
+
+```{r}
+plot(sales_data$x,sqrt(sales_data$y))
+abline(f1)
+```
+
+Yes the line is a great fit on the data.
+
+
+## e
+
+```{r}
+ei<-f1$residuals
+yhat<-f1$fitted.values
+par(mfcol=c(1,2))
+plot(yhat,ei,xlab='Residuals',ylab='Fitted Values')
+abline(0,0)
+qqnorm(residuals(f1))
+qqline(residuals(f1))
+```
+
+Plots show errors are there are no pattern to residuals and the residuals are approximately normally distributed as they are close to the line
+
+
+## f
+
+sqrt(Sales in thousands)=10.26093+1.07626(coded year)
+
+
+# Problem 2
+
+##a
+```{r}
+mass_data<-read.table('CH01PR27.txt',col.names = c('y','x'))
+xh<-c(45,55,65)
+f2<-lm(y~x,data=mass_data)
+f2_sum<-summary(f2)
+anova(f2)
+pred<-predict(f2,newdata = data.frame(x=xh),se.fit = T,level=.95)
+W <-sqrt( 2 * qf(0.95, 2, 58) )
+f2_sum
+lower<-pred$fit-W * pred$se.fit
+upper<-pred$fit+W * pred$se.fit
+lower
+upper
+```
+
+Xh=45; 98.489 <=E{yh}<= 107.104
+
+
+Xh=55; 88.015 <=E{yh}<= 93.778
+
+
+Xh=65; 76.113 <=E{yh}<= 81.881
+
+
+## b
+The WH procedure is better for larger g, so no, not for this problem. It's not the most efficient.
+
+## c
+```{r}
+xhbef=c(48,59,74)
+Wbef<-qt(1-.05/6,58)
+pred2<-predict(f2,newdata = data.frame(x=xhbef),se.fit = T,level=.95)
+Sxx <- sum( mass_data$x * mass_data$x) - length(mass_data$x) * (mean(mass_data$x))^2
+varR <- (f2_sum$sigma)^2
+SE <- sqrt(varR*((1/length(mass_data$x) + (xhbef - mean(mass_data$x))^2/Sxx) + 1))
+pred2$fit+Wbef*SE
+pred2$fit-Wbef*SE
+```
+Xh=48; 78.73541 <=E{yh}<= 119.71815
+
+
+Xh=59; 65.81829 <=E{yh}<= 106.45537
+
+
+Xh=74; 47.73184 <=E{yh}<= 88.84195
+
+## d
+
+Yes, the three prediction intervals will need to be recalculated. Same for the Scheffe Procedure.
+
+
+# Problem 3
+
+
+## a
+```{r}
+brand_data<-read.table('CH06PR05.txt',col.names = c('y','x1','x2'))
+pairs(~y+x1+x2,data=brand_data)
+cor(brand_data)
+
+```
+
+The scatter plot shows general relationship between Y and input variables and the correlation matrix shows that moisture(x1) has a very strong positive correlation with brand liking(y).
+
+## b
+```{r}
+fit3<-lm(y~x1+x2,data = brand_data)
+summary(fit3)
+```
+Y= 4.425x1+4.375x2+37.65 is the regression function.
+
+B1 is how much the moisture content affects the brand liking.
+
+
+## c
+
+```{r}
+res_fit3<-residuals(fit3)
+boxplot(res_fit3)
+```
+
+The boxplot shows the spread of the residuals and their quantiles. There seems to be no outliers and the boxplot is symmetrical.
+
+## d
+```{r}
+plot(fit3$fitted.values,res_fit3)
+abline(0,0)
+plot(brand_data$x1,res_fit3)
+abline(0,0)
+plot(brand_data$x2,res_fit3)
+abline(0,0)
+plot((brand_data$x1*brand_data$x2),res_fit3)
+abline(0,0)
+qqnorm(res_fit3)
+qqline(res_fit3)
+```
+
+The residuals do not seem random and there are repeated values. The normal plot however shows the residuals follow close to linear line.
+
+## e
+```{r}
+library(lmtest)
+lm(res_fit3~brand_data$x1)
+
+bptest(fit3)
+chi_val=qchisq(.99, df=2)
+chi_val
+
+# Alternatives
+# H0:y1=0  and Ha:y1 != 0
+
+# Decision Rule: if X^2BP < chi-square distribution
+```
+
+Conclude that y1=0 since 2.0441< 9.21
+
+## f
+```{r}
+alpha=.01
+fit_lack<-lm(y~as.factor(x1)+as.factor(x2),data = brand_data)
+lackfit<-anova(fit3,fit_lack)
+#Alternatives: H0:E{Y} = b0 + b1x1 + b1x2 and Ha: E{Y} != b0 + b1x1 + b1x2
+# Reject H0 if F-ratio > F a,m-p,n-m
+(lackfit$F)<qf(1-alpha,5,8)
+
+```
+Conclude: accept H0 since Fratio not bigger than F distribution
+
+
+# Problem 4
+
+## a
+```{r}
+commercial_data<-read.table("CH06PR18.txt",col.names = c('y','x1','x2','x3','x4'))
+stem(commercial_data$x1)
+stem(commercial_data$x2)
+stem(commercial_data$x3)
+stem(commercial_data$x4)
+```
+The stem and leaf plots shows the frequency at which certain classes of values occur
+
+
+## b
+```{r}
+pairs(~y+.,data=commercial_data)
+cor(commercial_data)
+```
+The rate(y) is strongly correlated to two predictors: first square footage(x4) and then expenses(x2). expenses(x2) and square footage(x4) is are also correlated which explains why both of those predictors also have strong correlation with rate(y). It also makes sense to see expenses(x2) and vacancy(x3) have strong negative correlation, as if more places are vacant there are less expenses.
+
+## c
+```{r}
+commercialfit<-lm(y~.,data=commercial_data)
+sum_comm<-summary(commercialfit)
+sum_comm
+anova(commercialfit)
+```
+Y=12.2-.1420x1+.2820x2+.6193x3+.000007924x4
+
+## d
+
+```{r}
+boxplot(resid(commercialfit))
+```
+No. it seems like there are a number of outliers outside of the boxplot, especially at the top. If there were no outliers however the boxplot would be symmetrical.
+
+## e
+```{r}
+plot(commercialfit$fitted.values,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x1,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x2,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x3,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x4,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x1*commercial_data$x2,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x1*commercial_data$x3,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x1*commercial_data$x4,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x2*commercial_data$x3,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x2*commercial_data$x4,residuals(commercialfit))
+abline(0,0)
+plot(commercial_data$x3*commercial_data$x4,residuals(commercialfit))
+abline(0,0)
+qqnorm(residuals(commercialfit))
+qqline(residuals(commercialfit))
+
+```
+
+The residual plots show that the fitted values are apprpriate for a linear fit, also the x2,x4 and x2*x4, terms are also good terms to be used in a linear model since the residual points are mostly random. The rest of the plots show some pattern or at least they aren't showing randomness. The normal plot also seems to not completely follow a linear line as the points at the ends start to increase their distance from the line. the outliers may be occuring because of the non-randomness of x1 and x3. 
+
+## f
+
+No, because each xi would need to have repeating Y values which doesn't occur with the given data.
+
+## g
+### Decision rule with alpha=0.5, if |t*BF| <= t alpha/2,n-2 then error variance is constant
+```{r}
+rownum_of_ordered_fitted<-order(commercialfit$fitted.values)
+fortysmallest_fitted<-commercial_data[rownum_of_ordered_fitted[1:40],]
+restof_fitted<-commercial_data[rownum_of_ordered_fitted[41:81],]
+
+group1_fitted<-lm(y~.,data=fortysmallest_fitted)
+group2_fitted<-lm(y~.,data=restof_fitted)
+
+d1<-abs(residuals(group1_fitted)-median(residuals(group1_fitted)))
+mean(d1)
+
+d2<-abs(residuals(group2_fitted)-median(residuals(group2_fitted)))
+mean(d2)
+sdd1<-sum((d1-mean(d1))^2)
+sdd2<-sum((d2-mean(d2))^2)
+s_for_comm<-sqrt((sdd1+sdd2)/79)
+
+t_star_comm<-(mean(d1)-mean(d2))/(s_for_comm*sqrt((1/40)+(1/41)))
+
+t_star_comm<qt(1-.05/2,79)
+
+```
+
+### conclusion: Error variance is constant
+
+# Problem 5
+
+## a
+
+### alternatives
+
+H0: b1 = b2 = b3 = b4 = 0, Ha: not all bk in H0 equal 0
+
+### Decision rule: 
+
+using F-Ratio; if F*>F a,p-q,n-p then reject H0
+
+```{r}
+comm_anova<-anova(commercialfit)
+sum_comm
+comm_MSR<-mean(comm_anova$`Mean Sq`[1:4])
+comm_MSE<-comm_anova$`Mean Sq`[5]
+F_star_comm<-comm_MSR/comm_MSE
+comm_F_score<-qf(1-.05,4,76)
+F_star_comm>comm_F_score
+```
+
+### Conclusion
+
+Reject H0. This means that there is atleast one Bk that is influencial to the data. The p-value of the test is 2.272e-14, almost 0.
+
+## b
+
+```{r}
+commercial_upperbounds_betas<-sum_comm$coefficients[2:5,'Estimate']+qt(1-0.05/8,76)*sum_comm$coefficients[2:5,'Std. Error']
+commercial_lowerbounds_betas<-sum_comm$coefficients[2:5,'Estimate']-qt(1-0.05/8,76)*sum_comm$coefficients[2:5,'Std. Error']
+commercial_upperbounds_betas
+commercial_lowerbounds_betas
+
+```
+
+-.1966 <= B1 <= -.0874
+.1204 <= B2 <= .4436
+-2.1613 <= B3 <= 3.3999
+.00000438 <= B4 <= .0000114
+
+With 95% confidence th coefficients for the data will be between the calculated ranges.
+
+## c
+```{r}
+sum_comm$r.squared
+
+```
+R^2 shows that approx. 58.5% of the variation in the data is being explained by the model. This isn't a great result.
+
+
+# Problem 6
+```{r}
+commercial_xh<-read.table("CH06PR20.txt", col.names=c('x1','x2','x3','x4'))
+Wbef_2<-qt(1-.05/8,76)
+predcom<-predict(commercialfit,newdata=commercial_xh,se.fit = T,level=.95)
+
+predcom$fit-Wbef_2*predcom$se.fit
+predcom$fit+Wbef_2*predcom$se.fit
+
+```
+
+
+# Problem 7
+
+## a
+
+```{r}
+sy<-sqrt(sum((commercial_data$y-mean(commercial_data$y))^2)/ (length(commercial_data$y)-1))
+y_star<-data.frame(y=(1/(sqrt(length(commercial_data$y)-1)))*((commercial_data$y-mean(commercial_data$y))/sy))
+
+s1=sqrt(sum((commercial_data$x1-mean(commercial_data$x1))^2)/ (length(commercial_data$x1)-1))
+x1_star<-data.frame(x1=(1/(sqrt(length(commercial_data$x1)-1)))*((commercial_data$x1-mean(commercial_data$x1))/s1))
+
+s2=sqrt(sum((commercial_data$x2-mean(commercial_data$x2))^2)/ (length(commercial_data$x2)-1))
+x2_star<-data.frame(x2=(1/(sqrt(length(commercial_data$x2)-1)))*((commercial_data$x2-mean(commercial_data$x2))/s2))
+
+s3=sqrt(sum((commercial_data$x3-mean(commercial_data$x3))^2)/ (length(commercial_data$x3)-1))
+x3_star<-data.frame(x3=(1/(sqrt(length(commercial_data$x3)-1)))*((commercial_data$x3-mean(commercial_data$x3))/s3))
+
+s4=sqrt(sum((commercial_data$x4-mean(commercial_data$x4))^2)/ (length(commercial_data$x4)-1))
+x4_star<-data.frame(x4=(1/(sqrt(length(commercial_data$x4)-1)))*((commercial_data$x4-mean(commercial_data$x4))/s4))
+transformed_commercial_data<-data.frame(y=y_star,x1=x1_star,x2=x2_star,x3=x3_star,x4=x4_star)
+fitted_transformed<-lm(y~., data=transformed_commercial_data)
+
+```
+Y*=-.5479x1+.423ex2+.04846x3+.5028x4
+standardized regression model
+
+## b
+
+The scaled coeffiecient for x2 is .423 and this means this shows that even after scaling the increasing expenses(x2) would increase rates(y)
+
+## c
+
+```{r}
+b1=(sy/s1)*-.5479
+b2=(sy/s2)*.423
+b3=(sy/s3)*.04846
+b4=(sy/s4)*.5028
+b0=mean(commercial_data$y)-b1*(mean(commercial_data$x1))-b2*(mean(commercial_data$x2))-b3*(mean(commercial_data$x3))-b4*(mean(commercial_data$x4))
+b0
+b1
+b2
+b3
+b4
+
+```
+Yes, the coefficient are the same
+
+# Problem 8
+
+## a
+```{r}
+first_order_brandfit<-lm(y~x1,data=brand_data)
+first_order_brandfit
+
+```
+
+Y=50.775+4.425x1
+
+## b
+They have the same coefficient
+
+## c
+
+```{r}
+anova(first_order_brandfit)
+summary(first_order_brandfit)
+```
+1566.45 for both so yes they are equal.
+
+## d
+
+The matrix confirms findings in part b and part c because the matrix shows the correlation between x1 and x2 is 0
+
+
+# Problem 9
+
+## a
+```{r}
+valuations_data<-read.table("CH08PR24.txt",col.names = c('y','x1','x2'))
+group <- as.factor(ifelse(valuations_data$x2==T, "Group 1", "Group 2"))
+plot(valuations_data$x1,valuations_data$y,pch = as.numeric(group), col = group)
+legend('bottomright',legend=c('Corner','Non-Corner'), pch=c(1,2), col=c("Black",'Red'))
+
+```
+
+The relation does not appear the same. The non-corner houses look to have a bigger slope.
+
+## b
+
+### alternatives 
+
+H0:B2=B3=0; Ha:  not all of the Bk in H0 equal zero.
+
+### Decison rule
+
+Partial F test: Reject H0 if F*> F alpha,p-q,n-p
+(SSR(x2,x3|x1)/(p-q))/MSE(x1,x2,x3)
+
+
+### Conclusion
+```{r}
+valuationfit<-lm(y~x1+x2+(x1*x2),data=valuations_data)
+
+summary(valuationfit)
+anova(valuationfit)
+
+sum(anova(valuationfit)[2:3,"Sum Sq"])/(4-2)/anova(valuationfit)[4,"Mean Sq"] > qf(1-.05,2,60)
+```
+
+Conclude reject H0.
+
+
+## c
+
+```{r}
+pop1_fit<-lm(y~x1,data=valuations_data[valuations_data$x2==T,])
+pop2_fit<-lm(y~x1,data = valuations_data[!valuations_data$x2,])
+
+summary(pop1_fit)
+summary(pop2_fit)
+valuations_data<-read.table("CH08PR24.txt",col.names = c('y','x1','x2'))
+group <- as.factor(ifelse(valuations_data$x2==T, "Group 1", "Group 2"))
+plot(valuations_data$x1,valuations_data$y,pch = as.numeric(group), col = group)
+legend('bottomright',legend=c('Corner','Non-Corner'), pch=c(1,2), col=c("Black",'Red'))
+abline(pop1_fit)
+abline(pop2_fit,col='red')
+```
+Y=-50.8836+1.6684x1 (Corner)
+Y=-126.9052+2.7759x2 (Non-Corner)

@@ -1,0 +1,1 @@
+"0","dotchart(lung_data$x2,labels=1:nrow(lung_data),xlab = 'blood out (x2)',ylab = 'index')"

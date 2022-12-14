@@ -1,0 +1,4 @@
+"0",""
+"0","newlogo <- image_read(""./hw2p5.jpg"")"
+"0","newlogo <- image_scale(newlogo, ""720x1080"")"
+"0","image_rotate(newlogo, 90)"

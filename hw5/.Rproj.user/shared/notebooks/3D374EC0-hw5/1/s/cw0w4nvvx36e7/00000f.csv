@@ -1,0 +1,8 @@
+"0","toxic_pred<-predict(toxicity_fit,newdata=data.frame(x1=3.5),type='response')"
+"0","toxic_pred"
+"1","        1 "
+"1","
+"
+"1","0.4293018 "
+"1","
+"

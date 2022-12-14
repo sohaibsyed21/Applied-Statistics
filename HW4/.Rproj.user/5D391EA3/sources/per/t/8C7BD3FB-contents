@@ -1,0 +1,207 @@
+---
+title: "Homework 4"
+author: "Sohaib Syed"
+date: "2022-10-18"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaps)
+```
+
+# Problem 1
+
+## a
+
+```{r}
+lung_data<-read.table('CH09PR13.txt',col.names = c('y','x1','x2','x3'))
+dotchart(lung_data$x1, labels=1:nrow(lung_data),xlab = 'blood in (x1)',ylab = 'index')
+dotchart(lung_data$x2,labels=1:nrow(lung_data),xlab = 'blood out (x2)',ylab = 'index')
+dotchart(lung_data$x3,labels=1:nrow(lung_data),xlab = 'blood gas (x3)',ylab = 'index')
+```
+
+the only thing that is noticeable is that for the dot charts for x1 and x2 show most data around the values of 25-40 on the x-axis
+
+## b
+
+```{r}
+pairs(~y+.,data=lung_data)
+cor(lung_data)
+```
+the scatter plots show that x1 and x2 each have a negative correlation with y. x3 does not have correlation with y. x1 and x2 seem to have positive correlation, while x3 is not correlated to x1 or x2. there might be multi-collinnearity between x1 and x2.
+
+## c
+
+```{r}
+lungfit1<-lm(y~.,data=lung_data)
+summary(lungfit1)
+anova(lungfit1)
+```
+
+Y=87.1875-56448x1-.51315x2-.07196x3
+
+# Problem 2
+
+## a
+```{r}
+lung_data['x1x2']<-data.frame(c(lung_data$x1*lung_data$x2))
+lung_data['x1x3']<-data.frame(c(lung_data$x1*lung_data$x3))
+lung_data['x2x3']<-data.frame(c(lung_data$x2*lung_data$x3))
+lung_data['x1^2']<-data.frame(c(lung_data$x1*lung_data$x1))
+lung_data['x2^2']<-data.frame(c(lung_data$x2*lung_data$x2))
+lung_data['x3^2']<-data.frame(c(lung_data$x3*lung_data$x3))
+
+best9<-regsubsets(x=lung_data[,2:10], y=lung_data$y,nbest=9,
+nvmax=9,method="exhaustive")
+report9<-summary(best9)
+order(report9$adjr2, decreasing=TRUE)[1:3] # best models at output matrix row 28 19 and 29
+report9$adjr2[order(report9$adjr2, decreasing=TRUE)[1:3]]
+```
+The best model is x1,x2,x1^2,x2^2
+The second best is x1,x2,x1x2
+The third best is x1,x3,x2x3,x1^2
+
+# Problem 3
+
+## a
+
+The regression model to be used should be Y_hat=B0+B1x1+B2x2+B3X3+e
+```{r}
+cosmetic_data<-read.table('CH10PR13.txt',col.names = c('y','x1','x2','x3'))
+cosmeticfit<-lm(y~.,data=cosmetic_data)
+summary(cosmeticfit)
+```
+Y=1.0233+.9657x1+.6292x2+.6760x3
+
+## b
+
+### Hypothesis
+
+H0: b1=b2=b3=0
+Ha: bk != 0 where k=(1,2,3)
+
+### Decision Rule
+F-Ratio > F alpha,p-q,n-p then reject H0
+
+```{r}
+cosmestic_anova<-anova(cosmeticfit)
+cosmestic_anova
+SSR_over_pminusq<-mean(sum(cosmestic_anova[1:3,'Sum Sq']))/3
+MSE<-cosmestic_anova[4,'Mean Sq']
+SSR_over_pminusq/MSE
+qf(.95,3,40)
+SSR_over_pminusq/MSE>qf(1-.05,3,40)
+
+```
+### Conclusion
+Reject H0
+
+## c
+### Hypothesis
+
+H0: bk=0
+Ha: bk != 0 k=(1,2,3)
+
+### Decision Rule
+T|obs| > t alpha/2,n-p then reject H0
+
+```{r}
+# getting values for coefficient and std.error from summary of fitted model part a
+b1_tobs<-.9657/.7092
+b2_tobs<-0.6292/0.7783
+b3_tobs<-0.6760/0.3557
+qt(1-.025,40)
+b1_tobs>qt(1-.05/2,40)
+b2_tobs>qt(1-.05/2,40)
+b3_tobs>qt(1-.05/2,40)
+```
+
+### Conclusion
+Accept H0 for each b1=0 b2=0 and b3=0
+
+No; The conclusions for this individual tests don't correspond to part b
+
+## d
+
+```{r}
+cor(cosmetic_data)
+```
+
+## e
+
+
+Parts b,c,d show that the data is not suitable because there is strong multi-collinearity in the data. The tests were contradicting and the correlation matrix shows strong correlation between predictors.
+
+# Problem 4
+
+# a
+```{r}
+lung_subset_model<-lm(y~x1+x2+(x1*x2),data=lung_data)
+par(mfrow=c(2,2))
+plot(lung_data$y,lung_subset_model$residuals,xlab='Pressure',ylab='residuals')
+abline(0,0)
+plot(lung_data$x1,lung_subset_model$residuals,xlab='Blood in',ylab='residuals')
+abline(0,0)
+plot(lung_data$x2,lung_subset_model$residuals,xlab='blood out',ylab='residuals')
+abline(0,0)
+plot(lung_data$x1*lung_data$x2,lung_subset_model$residuals,xlab='interaction x1:x2',ylab='residuals')
+abline(0,0)
+anova(lung_subset_model)
+```
+
+## b
+
+```{r}
+normplot<-qqnorm(resid(lung_subset_model))
+qqline(resid(lung_subset_model))
+```
+
+## c
+
+```{r}
+library(car)
+vif(lung_subset_model)
+```
+The maxVIF=22.474469 which is > 10 so there is strong evidence of multicollinearity here. 
+
+## d
+```{r}
+library(MASS)
+
+studres(lung_subset_model)>qt(1-.05/(2*(length(studres(lung_subset_model)))),length(studres(lung_subset_model))-4-1)
+```
+### decision rule:
+
+If studentized residual is greater then t alpha/2*length(studentized residuals),n-p-1 then there are outliers. 
+
+### conclusion
+
+None of the studentized residuals are greater than t distribution so no outliers
+
+## e
+```{r}
+influence(lung_subset_model)$hat> (2*(4/19))
+```
+
+At i of 3, 8 and 15, the rule of thumb suggests that x1 x2 are outliers at those idices. Comparing to dot charts, I do see that for x1 3 and 8 are outliers, and then for x2 at 3,8 and 15 are all outliers. They should be the same because the diagonal of hat matrix measures the distance of that point to the centroid, and if the values are too far from centroid they should be also apparent in the dot chart.
+
+## f
+```{r}
+M <- model.matrix(lung_subset_model)
+H <- M%*%solve(t(M)%*%M)%*%t(M)
+leverage<-diag(H)
+t_value<-lung_subset_model$residuals*sqrt((19-4-1)/
+(sum(lung_subset_model$residuals^2)*(1-leverage)-lung_subset_model$residuals^2))
+
+DFFITS <- t_value*sqrt(leverage/(1-leverage))
+DFFITS[c(3,7,8,15)]
+
+dfbetas(lung_subset_model)[c(3,7,8,15),]
+
+CookD <-lung_subset_model$residuals^2/(4*sum(lung_subset_model$residuals^2)/lung_subset_model$df)*(leverage)/(1-leverage)^2
+CookD[c(3,7,8,15)]
+```
+Using all three tests to conclude that points 7 and 8 are highly influential to the model. The DFFITS and DFBETAs are > 1 and the Cooks distance is also high percentages.

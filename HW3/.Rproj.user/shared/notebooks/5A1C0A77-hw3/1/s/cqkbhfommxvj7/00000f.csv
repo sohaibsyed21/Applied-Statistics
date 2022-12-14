@@ -1,0 +1,23 @@
+"0","first_order_brandfit<-lm(y~x1,data=brand_data)"
+"0","first_order_brandfit"
+"1","
+Call:
+"
+"1",""
+"1","lm(formula = y ~ x1, data = brand_data)"
+"1",""
+"1","
+
+"
+"1","Coefficients:
+"
+"1","(Intercept)  "
+"1","         x1  "
+"1","
+"
+"1","     50.775  "
+"1","      4.425  "
+"1","
+"
+"1","
+"

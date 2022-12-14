@@ -1,0 +1,1 @@
+"0","plot(performance_ability_original$x,fitted(fit),xlab='')"

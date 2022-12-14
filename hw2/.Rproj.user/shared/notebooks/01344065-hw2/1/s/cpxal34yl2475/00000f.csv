@@ -1,0 +1,1 @@
+"0","plot(gpa_data$X,gpa_data$Y,xlab = 'ACT Score', ylab = 'GPA')"

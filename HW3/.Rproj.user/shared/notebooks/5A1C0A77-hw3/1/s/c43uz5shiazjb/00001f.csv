@@ -1,0 +1,1 @@
+"0","plot(sales_data$x,sqrt(sales_data$y))"

@@ -1,0 +1,2 @@
+"0","lung_data<-read.table('CH09PR13.txt',col.names = c('y','x1','x2','x3'))"
+"0","dotchart(lung_data$x1, labels=1:nrow(lung_data),xlab = 'blood in (x1)',ylab = 'index')"

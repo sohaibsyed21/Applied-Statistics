@@ -1,0 +1,2 @@
+"0","f<-lm(sales_data$y~sales_data$x)"
+"0","abline(f)"

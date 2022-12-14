@@ -1,0 +1,3 @@
+"0","valuations_data<-read.table(""CH08PR24.txt"",col.names = c('y','x1','x2'))"
+"0","group <- as.factor(ifelse(valuations_data$x2==T, ""Group 1"", ""Group 2""))"
+"0","plot(valuations_data$x1,valuations_data$y,pch = as.numeric(group), col = group)"

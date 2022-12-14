@@ -1,0 +1,8 @@
+"0","pred_car<-predict(car_fit_full,newdata=data.frame(x1=50,x2=3),type='response')"
+"0","pred_car"
+"1","        1 "
+"1","
+"
+"1","0.6090245 "
+"1","
+"

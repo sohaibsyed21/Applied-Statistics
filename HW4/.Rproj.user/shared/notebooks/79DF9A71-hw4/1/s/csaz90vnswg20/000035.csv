@@ -1,0 +1,1 @@
+"0","normplot<-qqnorm(resid(lung_subset_model))"

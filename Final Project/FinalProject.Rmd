@@ -1,0 +1,186 @@
+---
+title: "Incident Regression"
+subtitle: "Math 564 Final Project"
+author: "Sohaib Syed, Ivan Prskalo"
+date: "2022-11-29"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+library(caret)
+library(tidyverse)
+library(randomForest)
+library(leaps)
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Data Preparation and Cleaning
+
+```{r}
+incident_log<-read.table("incident_event_log.csv",sep=",",header=T,na=c("?","NA"))
+
+incident_log$sys_created_at <- as.POSIXct(strptime(incident_log$sys_created_at, "%d/%m/%Y %H:%M"))
+
+incident_log$resolved_at <- as.POSIXct(strptime(incident_log$resolved_at, "%d/%m/%Y %H:%M"))
+
+incident_log$sys_updated_at <- as.POSIXct(strptime(incident_log$sys_updated_at, "%d/%m/%Y %H:%M"))
+
+incident_log$time_diff_res_create<-as.numeric(difftime(incident_log$resolved_at, incident_log$sys_created_at,units = "days"))
+
+incident_log$time_diff_res_update<-as.numeric(difftime(incident_log$resolved_at, incident_log$sys_updated_at,units = "days"))
+
+incident_log<-within(incident_log,{interval<-NA 
+interval[time_diff_res_update<1]<- "Within a Day"
+interval[time_diff_res_update>=1 & time_diff_res_update<7]<- "Within a Week"
+interval[time_diff_res_update>=7 & time_diff_res_update<14]<- "Within 2 Weeks"
+interval[time_diff_res_update>=14 & time_diff_res_update<30]<- "Within a Month"
+interval[time_diff_res_update>=30 & time_diff_res_update<183]<- "Within 6 Months"
+interval[time_diff_res_update>=183]<- "More than 6 Months"})
+
+
+incident_log<-subset(incident_log,incident_state!="Closed")
+
+incident_log<-subset(incident_log,select= c(number, incident_state, reassignment_count,reopen_count,sys_mod_count,sys_created_at, sys_updated_at, resolved_at, made_sla, category, subcategory, problem_id, impact, urgency, priority,time_diff_res_create,time_diff_res_update,interval))
+
+incident_log<-subset(incident_log,time_diff_res_update!=0 & time_diff_res_update>0)
+
+incident_log<-subset(incident_log,time_diff_res_create!="NA")
+
+incident_log  <- incident_log %>%
+    mutate(category = replace(category, is.na(category), "None"), subcategory = replace(subcategory, is.na(subcategory), "None"))
+
+incident_log<-subset(incident_log,select=-c(sys_updated_at,sys_created_at,resolved_at))
+
+```
+# Data Visualization
+```{r}
+ggplot(incident_log, aes(x=reorder(priority, priority, function(x)-length(x)))) +
+geom_bar(fill='red') +  labs(x='Priority')
+ggplot(incident_log, aes(x=reorder(impact, impact, function(x)-length(x)))) +
+geom_bar(fill='red') +  labs(x='Impact')
+ggplot(incident_log, aes(x=reorder(urgency, urgency, function(x)-length(x)))) +
+geom_bar(fill='red') +  labs(x='Urgency')
+ggplot(incident_log, aes(x=reorder(category, category, function(x)-length(x)))) +
+geom_bar(fill='red') +  labs(x='category')+theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+ggplot(incident_log, aes(x=reorder(subcategory, subcategory, function(x)-length(x)))) +
+geom_bar(fill='red') +  labs(x='subcategory')
+ggplot(incident_log, aes(x=reorder(made_sla, made_sla, function(x)-length(x)))) +
+geom_bar(fill='red') +  labs(x='made_sla')
+ggplot(incident_log, aes(x=reorder(incident_state, incident_state, function(x)-length(x)))) +
+geom_bar(fill='red') +  labs(x='incident_state')+theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+hist(incident_log$reassignment_count, xlab = "reassignment count", main = "Histogram of Reassignment Count")
+hist(incident_log$reopen_count, xlab = "reopen count", main = "Histogram of Reopen Count")
+hist(incident_log$sys_mod_count, xlab = "system mod count" , main = "Histogram of Sys Mod Count")
+hist(incident_log$time_diff_res_update, xlab = "Record Resolution" , main = "Histogram of Length of Record Resolution")
+
+
+print("total number of records where reassignment_count and reopen_count is 0")
+length(intersect(which(incident_log$reassignment_count==0), which(incident_log$reopen_count==0)))
+print("total number of records where reassignment_count is 0")
+length(which(incident_log$reassignment_count==0))
+print("total number of records where reopen_count is 0")
+length(which(incident_log$reopen_count==0))
+
+print("total number of records where urgency and impact are both 2 - Medium")
+length(intersect(which(incident_log$urgency=="2 - Medium"), which(incident_log$impact=="2 - Medium")))
+print("total number of records where urgency is 2 - Medium")
+length(which(incident_log$urgency=="2 - Medium"))
+print("total number of records where impact is 2 - Medium")
+length(which(incident_log$impact=="2 - Medium"))
+
+
+```
+# Data Split
+
+```{r}
+train_idx <- createDataPartition(incident_log$time_diff_res_update, p = 0.9, list=F)
+df_train <- incident_log[train_idx,]
+df_test <- incident_log[-train_idx,]
+df_test<-subset(df_test, df_test$subcategory %in% unique(df_train$subcategory))
+df_test<-subset(df_test, df_test$category %in% unique(df_train$category))
+```
+# Data train regression model
+```{r}
+
+best1<-regsubsets(time_diff_res_update~category+subcategory+incident_state+reassignment_count+reopen_count+sys_mod_count+made_sla+impact+urgency+priority,data=df_train ,nbest=1,method="backward",really.big=T)
+
+report1<-summary(best1)
+
+fit<-lm(time_diff_res_update ~ category+subcategory+incident_state+reassignment_count+reopen_count+sys_mod_count+made_sla+impact+urgency+priority,data=df_train)
+
+plot(fit$fitted.values,resid(fit))
+abline(0,0)
+qqnorm(residuals(fit))
+qqline(residuals(fit))
+anova(fit)
+summary(fit)
+
+fit2<-lm(time_diff_res_update ~ category+subcategory+reassignment_count+reopen_count+sys_mod_count+made_sla+impact+urgency+priority,data=df_train)
+
+plot(fit2$fitted.values,resid(fit2))
+abline(0,0)
+qqnorm(residuals(fit2))
+qqline(residuals(fit2))
+anova(fit2)
+summary(fit2)
+
+fit3<-lm(time_diff_res_update ~category+subcategory+impact+urgency+priority,data=df_train)
+plot(fit3$fitted.values,resid(fit3))
+abline(0,0)
+qqnorm(residuals(fit3))
+qqline(residuals(fit3))
+anova(fit3)
+summary(fit3)
+```
+
+# Data prediction regression model
+```{r}
+pred<-predict(fit,df_test)
+mean((df_test$time_diff_res_update-pred)^2)
+
+
+
+pred2<-predict(fit2,df_test)
+mean((df_test$time_diff_res_update-pred2)^2)
+
+
+
+pred3<-predict(fit3,df_test)
+mean((df_test$time_diff_res_update-pred3)^2)
+
+```
+
+# Train RandomForest
+
+```{r}
+rf <- randomForest(
+  as.factor(interval) ~ category+subcategory+incident_state+reassignment_count+reopen_count+sys_mod_count+made_sla+impact+urgency+priority,
+  data=df_train
+)
+
+rf2<- randomForest(
+  as.factor(interval) ~ category+subcategory+reassignment_count+reopen_count+sys_mod_count+made_sla+impact+urgency+priority,
+  data=df_train
+)
+
+rf3<- randomForest(
+  as.factor(interval) ~ category+subcategory+impact+urgency+priority,
+  data=df_train
+)
+```
+
+# Prediction from Random Forest
+```{r}
+
+rf_pred<-predict(rf,df_test)
+confusionMatrix(rf_pred, as.factor(df_test$interval))
+
+
+rf_pred2<-predict(rf2,df_test)
+confusionMatrix(rf_pred2, as.factor(df_test$interval))
+
+rf_pred3<-predict(rf3,df_test)
+confusionMatrix(rf_pred3, as.factor(df_test$interval))
+```

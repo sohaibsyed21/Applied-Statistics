@@ -1,0 +1,28 @@
+\contentsline {section}{Problem 1}{2}{section*.2}%
+\contentsline {subsection}{a}{2}{section*.3}%
+\contentsline {subsubsection}{Alternatives}{2}{section*.4}%
+\contentsline {subsubsection}{Decision Rule}{2}{section*.5}%
+\contentsline {subsubsection}{Conclusion}{2}{section*.6}%
+\contentsline {subsection}{b}{3}{section*.7}%
+\contentsline {subsection}{c}{3}{section*.8}%
+\contentsline {section}{Problem 2}{3}{section*.9}%
+\contentsline {subsection}{a}{3}{section*.10}%
+\contentsline {subsection}{b}{3}{section*.11}%
+\contentsline {subsection}{c}{4}{section*.12}%
+\contentsline {subsection}{d}{4}{section*.13}%
+\contentsline {section}{Problem 3}{4}{section*.14}%
+\contentsline {subsection}{a}{4}{section*.15}%
+\contentsline {subsection}{b}{5}{section*.16}%
+\contentsline {subsection}{c}{5}{section*.17}%
+\contentsline {subsection}{d}{5}{section*.18}%
+\contentsline {section}{Problem 4}{5}{section*.19}%
+\contentsline {subsection}{a}{5}{section*.20}%
+\contentsline {subsection}{b}{6}{section*.21}%
+\contentsline {subsection}{c}{6}{section*.22}%
+\contentsline {subsubsection}{Alternatives}{6}{section*.23}%
+\contentsline {subsubsection}{decision rule}{7}{section*.24}%
+\contentsline {subsubsection}{conclusion}{7}{section*.25}%
+\contentsline {subsection}{d}{7}{section*.26}%
+\contentsline {subsection}{e}{7}{section*.27}%
+\contentsline {subsection}{f}{8}{section*.28}%
+\contentsline {section}{Problem 5}{8}{section*.29}%

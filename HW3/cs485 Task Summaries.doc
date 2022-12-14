@@ -1,0 +1,1243 @@
+
+<!-- saved from url=(0083)http://www.cs.iit.edu/~cs105/admin/cs485/cs485%20Task%20Summaries%20Fall%202022.htm -->
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="http://www.cs.iit.edu/~cs105/admin/cs485/cs485%20Task%20Summaries%20Fall%202022_files/filelist.xml">
+<title>cs485 Task Summaries</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>jonhanrath</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>jonhanrath</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>52</o:TotalTime>
+  <o:Created>2022-08-11T15:21:00Z</o:Created>
+  <o:LastSaved>2022-08-11T18:49:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1497</o:Words>
+  <o:Characters>8539</o:Characters>
+  <o:Company>Microsoft</o:Company>
+  <o:Lines>71</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>10016</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	mso-list:l3 level1 lfo3;
+	mso-hyphenate:none;
+	tab-stops:list .75in;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:AR-SA;
+	font-weight:bold;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:19285944;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:2;
+	mso-list-type:simple;
+	mso-list-template-ids:2;
+	mso-list-name:WW8Num2;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:63.0pt;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-.25in;
+	mso-ansi-font-size:12.0pt;}
+@list l2
+	{mso-list-id:6;
+	mso-list-template-ids:6;
+	mso-list-name:WW8Num6;}
+@list l2:level1
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-text:"\.%2";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-text:"\.%3";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-text:"\.%4";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-text:"\.%5";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-text:"\.%6";
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-text:"\.%7";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-text:"\.%8";
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-text:"\.%9";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:7;
+	mso-list-type:simple;
+	mso-list-template-ids:7;
+	mso-list-name:WW8Num7;}
+@list l3:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:12.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang="EN-US" style="tab-interval:.5in">
+
+<div class="Section1">
+
+<p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:
+normal">cs485 Task Summaries Fall 2022<o:p></o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">WHO AM I? (20 points)
+(Due: Tuesday 8/23)</b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">A Word document named �<b style="mso-bidi-font-weight:normal">LastnameFirstname.doc</b>�
+(A pdf file is also acceptable) is to be emailed to the instructor by 11:59
+p.m. Tuesday 8/23 (20 points). In the upper left corner, the first two lines of
+the document must be:<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Line 1 : WHO AM I<o:p></o:p></span></b></p>
+
+<p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">����� </span>Line 2 : Lastname, Firstname. <o:p></o:p></span></b></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;mso-list:
+none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">The Document should tell something about yourself:<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="text-align:justify"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">a brief history of you (where
+are you from, growing up, why IIT, etc)<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="text-align:justify"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">when you will graduate <o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="text-align:justify"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">are you going to grad school
+<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="text-align:justify"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">what kind of work do you
+want to do<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="text-align:justify"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">what makes you happy and/or
+successful<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="text-align:justify"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">what are you hoping to get
+from this course<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="text-align:justify"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">etc.<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><b>TEAM POWERPOINT PRESENTATION: (25 points) (PowerPoint
+Due: Wednesday 8/31; Individual Comments Friday 9/2)</b><span style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Each team will create a 10 minute PowerPoint
+presentation (topic to be assigned from the list at the end of this document).
+Each presentation will answer the five questions below.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">����������� </span>1)
+What is the history/background of the topic? (2 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">2) What are the problems of
+society caused by or associated with this topic? (4 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">3) What are the possible
+solutions to these problems? (4 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">4) What will change in
+future years? (4 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">5) What research sources were
+used? (1 pt)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">In addition, points will be assigned for slide
+clarity, accuracy, and innovation (10 pts).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">The PowerPoint presentation should be very complete
+and demonstrate that the topic has been thoroughly researched and carefully
+analyzed.<span style="mso-spacerun:yes">� </span>The Team PowerPoint slides
+should be emailed to the instructor and everyone in the class by <b style="mso-bidi-font-weight:normal">11:59 p.m. on Wednesday, 8/31</b>.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Each student should review the other Teams�
+PowerPoint Slides and email their <b style="mso-bidi-font-weight:normal">positive</b>
+comments (positie comments only, please) to the instructor and the members of
+those teams by <b style="mso-bidi-font-weight:normal">11:59 p.m. on</b> <b style="mso-bidi-font-weight:normal">Friday, 9/2</b>.<span style="mso-spacerun:yes">� </span>Up to 2.5 points (10%) will be deducted from
+a student�s grade if comments are not on time and complete.<span style="mso-bidi-font-weight:bold"><o:p></o:p></span></span></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<b><span style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+AR-SA;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:always">
+</span></b>
+
+<p class="MsoNormal"><b>SCENARIO DISCUSSION: (40 POINTS</b>)</p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Each team will discuss the Scenario assigned to them</span><span style="font-size:12.0pt">. </span><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">Teams should come up with five (5) provocative questions regarding the
+important factors elicited by the scenario.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Once the questions are agreed upon, each Team should
+then answer those questions. The answers need not be definitive, and may well
+include further questions. The answers to the original questions should serve
+to inform the reader to the issues relevant to the scenario.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Each team will then lead a 10 minute discussion on
+the scenario using their questions as a guide.<span style="mso-spacerun:yes">�
+</span>The Team leading the discussion should read the scenario out loud, and
+then pose the questions and facilitate the discussion.<span style="mso-spacerun:yes">� </span>The Team leading the discussion should not
+sway the discussion in any direction, in particular, the discussion in the
+class need not be the same as the discussion (and answers) the Team itself came
+up with.<span style="mso-spacerun:yes">� </span>The Team leading the discussion
+can however, pose their question(s) after further clarifying them, or adding
+additional information to them (for example, �Ok, let�s say that the person
+*did* have prior knowledge to this event, then�?�).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Questions and answers should be emailed to the
+instructor by each due date.<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;mso-list:
+none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" align="center" style="margin-left:0in;text-align:center;
+  text-indent:0in;page-break-before:always;mso-list:none;tab-stops:.5in"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:
+  10.0pt">9/12<o:p></o:p></span></b></p>
+  </td>
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" align="center" style="margin-left:0in;text-align:center;
+  text-indent:0in;page-break-before:always;mso-list:none;tab-stops:.5in"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:
+  10.0pt">9/19<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="245" valign="top" style="width:2.55in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 3: Scenario 1<o:p></o:p></span></p>
+  </td>
+  <td width="245" valign="top" style="width:2.55in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 4: Scenario 6<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 4: Scenario 2<o:p></o:p></span></p>
+  </td>
+  <td width="245" valign="top" style="width:2.55in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 1: Scenario 7<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4">
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 1: Scenario 3<o:p></o:p></span></p>
+  </td>
+  <td width="245" valign="top" style="width:2.55in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 2: Scenario 8<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5">
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 2: Scenario 4<o:p></o:p></span></p>
+  </td>
+  <td width="245" valign="top" style="width:2.55in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 3: Scenario 9<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes">
+  <td width="245" valign="top" style="width:2.55in;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 5: Scenario 5<o:p></o:p></span></p>
+  </td>
+  <td width="245" valign="top" style="width:2.55in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+  0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team 5: Scenario 10<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;page-break-before:always;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><b style="mso-bidi-font-weight:normal">BOOK REPORT
+I: (25 POINTS) (Due: Choice 9/9; Report 9/19)</b><span style="font-size:12.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt">The
+first book report must be on a �Science Fiction Book�.<span style="mso-spacerun:yes">� </span>Sign up for your book by emailing your name,
+book title, date of publication, and author to the instructor. All books must
+be chosen before </span><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">11:59 p.m. on</span></b><span style="font-size:12.0pt"> <b style="mso-bidi-font-weight:normal">Friday 9/9</b>.
+Up to 2.5 points (10%) will be deducted from a student�s score for late Book
+Choice submission.</span></p>
+
+<p class="MsoBodyText3" style="margin-left:.25in;text-align:justify"><span style="font-weight:normal;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">The report, a single spaced
+Word (or pdf) document, and must contain the following:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:45.0pt;text-align:justify"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:63.0pt;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo5;tab-stops:list 63.0pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Who is the author?
+background, other works, etc. (1/2 page, 3 pts),<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:63.0pt;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo5;tab-stops:list 63.0pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">What is the main plot and
+characters in the book? Summary (1 to 2 pages, 3 pts). <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:63.0pt;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo5;tab-stops:list 63.0pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">How is the Society in the
+book different from present day Society? (1 to 2 pages, 3 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:63.0pt;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo5;tab-stops:list 63.0pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-list:Ignore">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">How is the Society in the
+book similar to present day Society? (1 to 2 pages, 3 pts)</span></p>
+
+<p class="MsoBodyText2" style="margin-left:63.0pt;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo5;tab-stops:list 63.0pt"><!--[if !supportLists]--><span style="mso-list:Ignore">5)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->What was the main point(s)/theme(s) of the book? (1 to
+2 pages, 3 pts)</p>
+
+<p class="MsoBodyText2" style="text-align:justify"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText2" style="text-align:justify">An additional 10 points will
+be awarded for grammar, clarity, provocativeness, etc.</p>
+
+<p class="MsoBodyText2" style="text-align:justify"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText2" style="text-align:justify">The report is a Word document
+named �<b style="mso-bidi-font-weight:normal">LastnameFirstnameBookreportI.doc</b>�
+(a pdf is also acceptable) is to be emailed to the instructor by <b style="mso-bidi-font-weight:normal">11:59 p.m. Monday 9/19</b>. In the upper
+left corner:</p>
+
+<p class="MsoBodyText2" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal">Line 1: BOOK REPORT I <o:p></o:p></b></p>
+
+<p class="MsoBodyText2" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal">Line 2: Lastname, Firstname <o:p></o:p></b></p>
+
+<p class="MsoBodyText2" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal">Line 3: BOOK TITLE<o:p></o:p></b></p>
+
+<p class="MsoBodyText2" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal">Line 4: AUTHOR <o:p></o:p></b></p>
+
+<p class="MsoBodyText2" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal">Line 5: FIRST DATE OF PUBLICATION</b>. </p>
+
+<p class="MsoBodyText2" style="text-align:justify"><o:p>&nbsp;</o:p></p>
+
+<b style="mso-bidi-font-weight:normal"><span style="font-size:14.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:AR-SA;
+mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:always">
+</span></b>
+
+<p class="MsoNormal" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal">HISTORY OF COMPUTERS: (70 points: 35 points each) </b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Each team is assigned two
+Eras. Each team will prepare two, 15 minute PowerPoint presentations (one for
+each Era assigned).<span style="mso-spacerun:yes">� </span>PowerPoint
+presentations will be on the history of computing during the assigned Era. A
+PowerPoint presentation should have no more than six lines on a slide and no
+more than six words on a line. Opening slide will have team number and Era.
+Email your PowerPoint Slides named �<b>TeamNumberAssignedEra.ppt</b>� (e.g. �<b>Team3
+1960 to 1969.ppt</b>�) to the instructor and the rest of the students in the
+course by <b>11:59 p.m. on the Due Date</b>.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="147" valign="top" style="width:110.15pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Due 10/5</span></b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p></o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Due 10/12</span></b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p></o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Due 10/26</span></b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p></o:p></span></p>
+  </td>
+  <td width="173" valign="top" style="width:129.45pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Due 11/2</span></b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="147" valign="top" style="width:110.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="173" valign="top" style="width:129.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="147" valign="top" style="width:110.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 1 before 1950<span style="mso-spacerun:yes">��� </span><o:p></o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 3 1960 � 1969<span style="mso-spacerun:yes">�� </span><o:p></o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 5 1980 � 1989<span style="mso-spacerun:yes">�� </span><o:p></o:p></span></p>
+  </td>
+  <td width="173" valign="top" style="width:129.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 3 2010 � 2019<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td width="147" valign="top" style="width:110.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 2 1950 � 1959<span style="mso-spacerun:yes">���� </span><o:p></o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 4 1970 � 1979<span style="mso-spacerun:yes">����� </span><o:p></o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 1 1990 � 1999<span style="mso-spacerun:yes">��� </span><o:p></o:p></span></p>
+  </td>
+  <td width="173" valign="top" style="width:129.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 4 2020 � Present<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes">
+  <td width="147" valign="top" style="width:110.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="147" valign="top" style="width:110.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 2 2000 � 2009<o:p></o:p></span></p>
+  </td>
+  <td width="173" valign="top" style="width:129.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+  mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Team 5 Future Decades<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Topics that are to be included in both the
+PowerPoint presentations (All five topics must be covered):<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">1) Important people (6 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">2) Hardware and software
+development (6 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">3) Technology of the Era
+(i.e., how the software and hardware were used) (6 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">4) Impact on Society (6 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">5) Research sources used (1
+pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">For the <b style="mso-bidi-font-weight:normal">Future
+Decades</b> presentation, the Team can follow the topics above to the best of
+their ability (and imagination).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">In addition, points will be assigned for slide
+clarity, accuracy, and innovation (10 pts).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Each student should review the other Teams�
+PowerPoint Slides and email their positive comments to the instructor and the
+members of those teams by the Friday after the slides arrive.<span style="mso-spacerun:yes">� </span>Up to 7 points (10%) will be deducted from a
+student�s grade if comments are not on time and complete.<span style="mso-bidi-font-weight:bold"><o:p></o:p></span></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;tab-stops:.5in 1.0in 184.35pt"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;page-break-before:always"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">�</span></span><b><o:p></o:p></b></p>
+
+<p class="MsoNormal"><b>INDIVIDUAL POWERPOINT PRESENTATIONS: (25 points) (Due: 11/7)</b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Each student will create an individual PowerPoint
+presentation (topic to be assigned from the list at the end of this document). Presentations
+should be created to support a 15 minute presentation, even though the student
+will nto actually present the presentation this term.<span style="mso-spacerun:yes">� </span>Each presentation will answer the five
+questions below.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">����������� </span>1)
+What is the history/background of the topic? (2 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">2) What are the problems of
+society caused by or associated with this topic? (4 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">3) What are the possible
+solutions to these problems? (4 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">4) Will the problems change
+in future years? (4 pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">5) What research sources
+were used? (1 pt)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">In addition, points will be assigned for slide
+clarity, accuracy, and innovation (10 pts).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">The PowerPoint presentation should be very complete
+and demonstrate that the topic has been thoroughly researched and carefully
+analyzed.<span style="mso-spacerun:yes">� </span>The Individual PowerPoint
+slides should be emailed to the instructor by <b style="mso-bidi-font-weight:
+normal">11:59 p.m. on 11/7</b>.<span style="mso-spacerun:yes">� </span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">BOOK REPORT II: (25
+Points) (Due Friday 10/21)<o:p></o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt">The
+second book report is to be a science fiction <b style="mso-bidi-font-weight:
+normal">story you have written</b>, using your assigned topic as the first line
+of the story. (<b style="mso-bidi-font-weight:normal">General Length: 3 to 10
+pages</b>�this is not a hard maximum).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">The story is a Word document named �</span><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt">LastnameFirstnameBookreport2.doc</span></b><span style="font-size:12.0pt"> (a pdf is also acceptable)</span><span style="mso-spacerun:yes">� </span><span style="font-size:12.0pt">is to be
+emailed to the instructor</span><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"> by <b style="mso-bidi-font-weight:normal">11:59 p.m. Friday 10/12</b>.
+In the upper left corner:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Line 1: BOOK
+REPORT II<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Line 2:
+&lt;Lastname, Firstname&gt;<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Line 3:
+&lt;STORY TITLE&gt; <o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Line 4:
+Computers and &lt;TOPIC</span></b><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"> &gt;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">The opening sentence of your story will be:<b style="mso-bidi-font-weight:normal"><o:p></o:p></b></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">�The impact on
+society becomes very visible upon the examination of computers and<span style="mso-spacerun:yes">� </span>&lt;topic&gt;�</span></b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Have FUN!!!</span><b style="mso-bidi-font-weight:
+normal"><o:p></o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">UNIT ARTICLE
+DISCUSSIONS: (100 POINTS)</b><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-weight:bold"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">Each team has been
+assigned articles in the text. The team will lead a 10</span><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"> <span style="mso-bidi-font-weight:
+bold">minute discussion about the articles assigned. <span style="mso-spacerun:yes">�</span>Teams will come up with at least 5 provocative
+questions for each assigned article to ask the class.<span style="mso-spacerun:yes">� </span>Questions for each article should be emailed
+to the instructor by each discussion date.<o:p></o:p></span></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">The dates of the
+discussions are listed below.<span style="mso-spacerun:yes">� </span><b>All
+students are to have read the articles before class</b>. </span><span style="font-size:12.0pt">(50 points each).</span><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-weight:bold">.</span><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-spacerun:yes">�</span></span><b><o:p></o:p></b></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td colspan="2" valign="top" style="border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b>11/14<o:p></o:p></b></p>
+  </td>
+  <td colspan="2" valign="top" style="border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b>11/28<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td colspan="2" valign="top" style="border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td colspan="2" valign="top" style="border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">�</span></span><b><o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  3<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  1.1</span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  4<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  2.3</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  4<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  1.2</span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  1<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  3.1</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  1<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  1.3</span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  2<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  3.2</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  2<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  2.1</span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  3<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  3.3</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  5<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  2.2<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Team
+  5<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Article
+  3.4<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><span style="mso-tab-count:4">����������������������������������������� </span></span><span style="mso-tab-count:1">��������� </span><span style="mso-spacerun:yes">����
+</span><b><o:p></o:p></b></p>
+
+<p class="MsoNormal" style="page-break-before:always"><b>FINAL PAPER: (30
+points)<span style="mso-spacerun:yes">�� </span>(Due: Outline 11/4; Paper 11/21)</b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">The research paper (3-8 pages) will be prepared to
+be published. The theme of the paper is your assigned topic.<span style="mso-spacerun:yes">� </span>Paper will be prepared following the format
+in the handout (<b style="mso-bidi-font-weight:normal"><u>Preparation of Papers
+in Two Column Format</u></b>). A detailed outline of the final paper will be
+emailed to the instructor <b style="mso-bidi-font-weight:normal">by 11:59 p.m.
+on Friday, 11/21</b>. The research paper is a document named �<b style="mso-bidi-font-weight:normal">LastnameFirstnameFinalPaper.doc</b>�</span>
+<span style="font-size:12.0pt">(a pdf is also acceptable)</span> <span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">�</span>is to be emailed to the instructor by <b style="mso-bidi-font-weight:normal">11:59 p.m. Monday 11/21</b>. <o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:.25in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">The paper must answer the following questions as sections of the paper.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">1) What is the
+background/history of the topic? (4pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">2) What has changed in
+society because of this topic? (4pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">3) Has this change been good
+or bad for society? (4pts) <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">4) How will this topic look
+10 years from now? (4pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">5) What problems do you
+think will arise? (4pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">6) What sources were used?
+(2pts)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:.5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">In addition, points will be assigned for slide
+clarity, accuracy, and innovation (8 pts).<o:p></o:p></span></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">EXAMS: (</b>40
+points)<span style="mso-spacerun:yes">�� </span>-<span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="tab-stops:21.0pt"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="tab-stops:21.0pt"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Both exams will be two essay questions regarding
+information covered in class.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="tab-stops:21.0pt"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt">Both exams will be one hour in length.<o:p></o:p></span></p>
+
+<p class="MsoListBullet" style="margin-left:0in;text-align:justify;text-indent:
+0in;mso-list:none;tab-stops:21.0pt"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td valign="top" style="border:solid windowtext 1.0pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Midterm</span></b></p>
+  </td>
+  <td valign="top" style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">10/17</span></p>
+  </td>
+  <td valign="top" style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">10:00
+  a.m. to 11:00 a.m. Central Time (20 points)</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td colspan="3" valign="top" style="border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Final Exam</span></b></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">11/30</span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">10:00
+  a.m. to 11:00 a.m. Central Time (20 points)</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes">
+  <td colspan="3" valign="top" style="border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+</div>
+
+
+
+
+</body></html>

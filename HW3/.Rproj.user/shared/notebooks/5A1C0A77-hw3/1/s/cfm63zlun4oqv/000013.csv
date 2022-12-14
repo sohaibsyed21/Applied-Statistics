@@ -1,0 +1,2 @@
+"0","brand_data<-read.table('CH06PR05.txt',col.names = c('y','x1','x2'))"
+"0","pairs(~y+x1+x2,data=brand_data)"

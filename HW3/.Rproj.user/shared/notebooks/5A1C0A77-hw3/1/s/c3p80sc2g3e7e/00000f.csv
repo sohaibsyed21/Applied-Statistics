@@ -1,0 +1,7 @@
+"0","b1=(sy/s1)*.5479"
+"0","b2=(sy/s2)*.423"
+"0","b3=(sy/s3)*.04846"
+"0","b4=(sy/s4)*.5028"
+"0","b0=mean(commercial_data$y)-b1(mean(commercial_data$x1))-b2(mean(commercial_data$x2))-b3(mean(commercial_data$x3))-b4(mean(commercial_data$x4))"
+"2","Error in b1(mean(commercial_data$x1)) : could not find function ""b1""
+"

@@ -1,0 +1,4 @@
+"0","image = readImage('./hw2p5.JPG')"
+"2","Error in readImage(""./hw2p5.JPG"") : 
+  supported image types are .png, .jpeg, .jpg, .tiff (or .tif, .TIFF, .TIF)
+"

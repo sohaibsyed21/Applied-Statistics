@@ -1,0 +1,4 @@
+"0","toxicity_original<-read.table('CH14PR12.txt',col.names = c('x1','nj','y'))"
+"0","prob_i<-toxicity_original$y/toxicity_original$nj"
+"0","plot(toxicity_original$x1,prob_i,xlab='Dose Level (log-scale)', ylab='Proportions of Dead Insects')"
+"0",""

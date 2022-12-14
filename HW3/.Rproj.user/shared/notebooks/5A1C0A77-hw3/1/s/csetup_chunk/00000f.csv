@@ -1,0 +1,16 @@
+"0","knitr::opts_chunk$set(echo = TRUE)"
+"0","library(MASS)"
+"0","library('ALSM')"
+"2","Loading required package: leaps
+"
+"2","Loading required package: SuppDists
+"
+"2","Loading required package: car
+"
+"2","Loading required package: carData
+"
+"0","library(matlib)"
+"2","Registered S3 method overwritten by 'htmlwidgets':
+  method           from         
+  print.htmlwidget tools:rstudio
+"
